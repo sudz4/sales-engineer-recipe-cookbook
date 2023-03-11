@@ -18,7 +18,7 @@ def convert_ipynb_to_pdf(ipynb_filename):
     pdf_exporter.exclude_output_stderr = True
 
     # Export to PDF
-    (output, resources) = PDFExporter.from_notebook_node(nb)
+    (output, resources) = pdf_exporter.from_notebook_node(nb)
 
     # Determine the output filename
     basename = os.path.splitext(ipynb_filename)[0]
